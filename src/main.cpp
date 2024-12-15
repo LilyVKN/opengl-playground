@@ -187,14 +187,29 @@ int main(int argc, char *argv[]) {
 
     auto program_start = std::chrono::high_resolution_clock::now();
     double delT = 0.0;
+
+    // render first frame
+    XGetWindowAttributes(dpy, win, &gwa);
+    glViewport(0, 0, gwa.width, gwa.height);
+    draw(shader_prog, vao, 0.0); 
+
     while(1) {        
         auto frame_start = std::chrono::high_resolution_clock::now();
         std::chrono::duration<double> program_age = frame_start - program_start;
 
+        // TODO: read user input
+
+        // swap frame while computing
+        glXSwapBuffers(dpy, win);
+
+        // TODO: pass data to physics thread
+
+        // render next frame
         XGetWindowAttributes(dpy, win, &gwa);
         glViewport(0, 0, gwa.width, gwa.height);
-        draw(shader_prog, vao, program_age.count()); 
-        glXSwapBuffers(dpy, win);
+        draw(shader_prog, vao, program_age.count());
+
+        // TODO: wait for the physics thread to complete
 
         auto frame_end = std::chrono::high_resolution_clock::now();
         std::chrono::duration<double> elapsed_seconds = frame_end - frame_start;

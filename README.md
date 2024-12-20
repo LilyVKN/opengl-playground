@@ -19,8 +19,16 @@ a = Af - b >= 0
 f >= 0
 f^T a = 0
 ```
-Per Lodstedt. Coulomb friction in two-dimensional rigid body systems. *Zeitschrift fur Angewandte Mathematik und Mechanik*. 1981
-Brian Vincent Mitrich. Impulse-based Dynamic Simulation of Rigid Body Systems. 1996. [Link](http://www.kuffner.org/james/software/dynamics/mirtich/mirtichThesis.pdf)
+Per Lodstedt. Coulomb friction in two-dimensional rigid body systems. *Zeitschrift fur Angewandte Mathematik und Mechanik*. 1981  
+David Baraff. Fast Contact Force Computation for Non-penetrating Rigid Bodies. [Link](https://www.cs.cmu.edu/~baraff/papers/sig94.pdf)  
+Brian Mitrich, John Canny. Impulse-based Simulation of Rigid Bodies. 1995. [Link](https://graphics.stanford.edu/courses/cs468-03-winter/Papers/ibsrb.pdf)  
+Brian Vincent Mitrich. Impulse-based Dynamic Simulation of Rigid Body Systems. 1996. [Link](http://www.kuffner.org/james/software/dynamics/mirtich/mirtichThesis.pdf)  
+David Stewart, J.C. Trinkle. An Implicit Time-Stepping Scheme for Rigid Body Dynamics with Coulomb Friction. 1996. [Link](https://foswiki.cs.rpi.edu/foswiki/pub/RoboticsWeb/LabPublications/STicra00.pdf)  
+Michael Cline, Dinesh Pai. Post-Stabilization for Rigid Body Simulation with Contact and Constraints. 2003. [Link](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=476dfce4be549655938c499663af246702cbc781)  
+Erin Catto. Iterative Dynamics with Temporal Coherence. 2005. [Link](https://box2d.org/files/ErinCatto_IterativeDynamics_GDC2005.pdf)  
+Kenny Erleben. Physics-Based Animation. 2005. [Link](https://iphys.wordpress.com/wp-content/uploads/2020/01/erleben.ea05.pdf)  
+Kenny Erleben. Numerical Methods for Linear Complementarity Problems in Physics-based Animation. 2013 [Link](http://image.diku.dk/kenny/download/erleben.13.siggraph.course.notes.pdf)  
+[Video](https://www.youtube.com/watch?v=SHinxAhv1ZE)  
 
 ## Installation Instructions
 ```
